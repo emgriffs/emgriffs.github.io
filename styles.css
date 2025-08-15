@@ -4,7 +4,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
-    background: linear-gradient(-45deg, #87CEEB, #4682B4, #5F9EA0, #4682B4);
+    background: linear-gradient(-45deg, #E0F6FF, #87CEEB, #4682B4, #6495ED);
     background-size: 400% 400%;
     animation: ocean 8s ease-in-out infinite;
 }
@@ -17,10 +17,22 @@ button {
     background-color: #007acc;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
+    padding: 15px 25px;
+    margin: 10px;
     cursor: grab;
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+}
+
+button:nth-child(1) { border-radius: 50px; animation-delay: 0s; }
+button:nth-child(2) { border-radius: 0px; animation-delay: 1s; }
+button:nth-child(3) { border-radius: 15px 50px; animation-delay: 2s; }
+button:nth-child(4) { border-radius: 50%; animation-delay: 3s; }
+button:nth-child(5) { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); animation-delay: 4s; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
 }
 
 button:hover {
