@@ -20,7 +20,7 @@ button {
    padding: 10px 20px;
    margin: 5px;
    border-radius: 5px;
-   cursor: grab;
+   cursor: url('images/sun.png'), pointer;
 }
 
 button:hover {
