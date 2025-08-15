@@ -41,5 +41,14 @@
        <h2>Crafts</h2>
        <p>Overly complicated DIY with limited use</p>
    </section>
+
+    <script>
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', function() {
+            console.log('Button clicked: ' + this.textContent);
+        });
+    });
+    </script>
+    
 </body>
 </html>
