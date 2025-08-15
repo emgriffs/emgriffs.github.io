@@ -7,6 +7,7 @@ body {
    background: linear-gradient(-45deg, #E0F6FF, #87CEEB, #4682B4, #6495ED);
    background-size: 400% 400%;
    animation: ocean 8s ease-in-out infinite;
+   cursor: url('images/sun.png'), auto;
 }
 
 nav {
