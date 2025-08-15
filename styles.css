@@ -20,19 +20,67 @@ button {
     padding: 15px 25px;
     margin: 10px;
     cursor: grab;
-    position: relative;
-    animation: float 6s ease-in-out infinite;
+    position: fixed;
+    animation: lavaLamp 15s ease-in-out infinite;
 }
 
-button:nth-child(1) { border-radius: 50px; animation-delay: 0s; }
-button:nth-child(2) { border-radius: 0px; animation-delay: 1s; }
-button:nth-child(3) { border-radius: 15px 50px; animation-delay: 2s; }
-button:nth-child(4) { border-radius: 50%; animation-delay: 3s; }
-button:nth-child(5) { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); animation-delay: 4s; }
+button:nth-child(1) { 
+    border-radius: 73% 27% 83% 17% / 72% 23% 77% 28%; 
+    animation: lavaLamp1 12s ease-in-out infinite;
+    left: 20%;
+}
+button:nth-child(2) { 
+    border-radius: 36% 64% 21% 79% / 68% 19% 81% 32%;
+    animation: lavaLamp2 18s ease-in-out infinite; 
+    left: 40%;
+}
+button:nth-child(3) { 
+    border-radius: 85% 15% 92% 8% / 46% 89% 11% 54%;
+    animation: lavaLamp3 14s ease-in-out infinite;
+    left: 60%;
+}
+button:nth-child(4) { 
+    border-radius: 29% 71% 48% 52% / 84% 13% 87% 16%;
+    animation: lavaLamp4 16s ease-in-out infinite;
+    left: 10%;
+}
+button:nth-child(5) { 
+    border-radius: 91% 9% 34% 66% / 25% 75% 19% 81%;
+    animation: lavaLamp5 20s ease-in-out infinite;
+    left: 80%;
+}
 
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+@keyframes lavaLamp1 {
+    0%, 100% { transform: translate(0px, 100px) rotate(0deg); }
+    25% { transform: translate(200px, 300px) rotate(90deg); }
+    50% { transform: translate(-100px, 500px) rotate(180deg); }
+    75% { transform: translate(150px, 200px) rotate(270deg); }
+}
+
+@keyframes lavaLamp2 {
+    0%, 100% { transform: translate(0px, 200px) rotate(0deg); }
+    33% { transform: translate(-150px, 400px) rotate(120deg); }
+    66% { transform: translate(100px, 100px) rotate(240deg); }
+}
+
+@keyframes lavaLamp3 {
+    0%, 100% { transform: translate(0px, 150px) rotate(0deg); }
+    50% { transform: translate(250px, 450px) rotate(180deg); }
+}
+
+@keyframes lavaLamp4 {
+    0%, 100% { transform: translate(0px, 300px) rotate(0deg); }
+    20% { transform: translate(180px, 100px) rotate(72deg); }
+    40% { transform: translate(-80px, 400px) rotate(144deg); }
+    60% { transform: translate(220px, 350px) rotate(216deg); }
+    80% { transform: translate(-50px, 150px) rotate(288deg); }
+}
+
+@keyframes lavaLamp5 {
+    0%, 100% { transform: translate(0px, 250px) rotate(0deg); }
+    25% { transform: translate(-200px, 150px) rotate(90deg); }
+    50% { transform: translate(50px, 450px) rotate(180deg); }
+    75% { transform: translate(-120px, 350px) rotate(270deg); }
 }
 
 button:hover {
