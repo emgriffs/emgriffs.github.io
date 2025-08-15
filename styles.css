@@ -26,32 +26,32 @@ button {
 button:nth-child(1) { 
     border-radius: 89% 11% 92% 8% / 23% 87% 13% 77%; 
     animation: slowBlob1 25s ease-in-out infinite;
-    left: 10%;
-    top: 20%;
+    left: 5%;
+    top: 15%;
 }
 button:nth-child(2) { 
     border-radius: 15% 85% 19% 81% / 94% 6% 89% 11%;
     animation: slowBlob2 30s ease-in-out infinite; 
-    left: 70%;
-    top: 10%;
+    left: 75%;
+    top: 25%;
 }
 button:nth-child(3) { 
     border-radius: 93% 7% 28% 72% / 41% 59% 18% 82%;
     animation: slowBlob3 35s ease-in-out infinite;
-    left: 40%;
-    top: 60%;
+    left: 45%;
+    top: 70%;
 }
 button:nth-child(4) { 
     border-radius: 22% 78% 87% 13% / 76% 24% 91% 9%;
     animation: slowBlob4 28s ease-in-out infinite;
-    left: 5%;
-    top: 70%;
+    left: 15%;
+    top: 60%;
 }
 button:nth-child(5) { 
     border-radius: 96% 4% 31% 69% / 18% 82% 27% 73%;
     animation: slowBlob5 32s ease-in-out infinite;
-    left: 80%;
-    top: 50%;
+    left: 65%;
+    top: 45%;
 }
 
 @keyframes slowBlob1 {
