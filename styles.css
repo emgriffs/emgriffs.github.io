@@ -1,102 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-    background: linear-gradient(-45deg, #E0F6FF, #87CEEB, #4682B4, #6495ED);
-    background-size: 400% 400%;
-    animation: ocean 8s ease-in-out infinite;
+   font-family: Arial, sans-serif;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+   line-height: 1.6;
+   background: linear-gradient(-45deg, #E0F6FF, #87CEEB, #4682B4, #6495ED);
+   background-size: 400% 400%;
+   animation: ocean 8s ease-in-out infinite;
 }
 
 nav {
-    margin: 30px 0;
+   margin: 30px 0;
 }
 
 button {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    margin: 10px;
-    cursor: grab;
-    position: fixed;
-}
-
-button:nth-child(1) { 
-    border-radius: 89% 11% 92% 8% / 23% 87% 13% 77%; 
-    animation: slowBlob1 25s ease-in-out infinite;
-    left: 5%;
-    top: 15%;
-}
-button:nth-child(2) { 
-    border-radius: 15% 85% 19% 81% / 94% 6% 89% 11%;
-    animation: slowBlob2 30s ease-in-out infinite; 
-    left: 75%;
-    top: 25%;
-}
-button:nth-child(3) { 
-    border-radius: 93% 7% 28% 72% / 41% 59% 18% 82%;
-    animation: slowBlob3 35s ease-in-out infinite;
-    left: 45%;
-    top: 70%;
-}
-button:nth-child(4) { 
-    border-radius: 22% 78% 87% 13% / 76% 24% 91% 9%;
-    animation: slowBlob4 28s ease-in-out infinite;
-    left: 15%;
-    top: 60%;
-}
-button:nth-child(5) { 
-    border-radius: 96% 4% 31% 69% / 18% 82% 27% 73%;
-    animation: slowBlob5 32s ease-in-out infinite;
-    left: 65%;
-    top: 45%;
-}
-
-@keyframes slowBlob1 {
-    0%, 100% { transform: translate(0px, 0px); border-radius: 89% 11% 92% 8% / 23% 87% 13% 77%; }
-    25% { transform: translate(50px, 80px); border-radius: 34% 66% 71% 29% / 88% 12% 45% 55%; }
-    50% { transform: translate(-30px, 150px); border-radius: 77% 23% 18% 82% / 65% 35% 91% 9%; }
-    75% { transform: translate(80px, 40px); border-radius: 52% 48% 83% 17% / 29% 71% 36% 64%; }
-}
-
-@keyframes slowBlob2 {
-    0%, 100% { transform: translate(0px, 0px); border-radius: 15% 85% 19% 81% / 94% 6% 89% 11%; }
-    33% { transform: translate(-60px, 120px); border-radius: 91% 9% 46% 54% / 37% 63% 72% 28%; }
-    66% { transform: translate(40px, 200px); border-radius: 28% 72% 95% 5% / 81% 19% 14% 86%; }
-}
-
-@keyframes slowBlob3 {
-    0%, 100% { transform: translate(0px, 0px); border-radius: 93% 7% 28% 72% / 41% 59% 18% 82%; }
-    50% { transform: translate(-80px, -100px); border-radius: 47% 53% 86% 14% / 92% 8% 63% 37%; }
-}
-
-@keyframes slowBlob4 {
-    0%, 100% { transform: translate(0px, 0px); border-radius: 22% 78% 87% 13% / 76% 24% 91% 9%; }
-    20% { transform: translate(100px, -50px); border-radius: 68% 32% 25% 75% / 49% 51% 84% 16%; }
-    40% { transform: translate(20px, -120px); border-radius: 95% 5% 71% 29% / 33% 67% 58% 42%; }
-    60% { transform: translate(-40px, -80px); border-radius: 41% 59% 96% 4% / 87% 13% 26% 74%; }
-    80% { transform: translate(70px, -20px); border-radius: 74% 26% 39% 61% / 62% 38% 93% 7%; }
-}
-
-@keyframes slowBlob5 {
-    0%, 100% { transform: translate(0px, 0px); border-radius: 96% 4% 31% 69% / 18% 82% 27% 73%; }
-    25% { transform: translate(-90px, 60px); border-radius: 53% 47% 79% 21% / 85% 15% 44% 56%; }
-    50% { transform: translate(-20px, -90px); border-radius: 17% 83% 54% 46% / 71% 29% 98% 2%; }
-    75% { transform: translate(-60px, 30px); border-radius: 88% 12% 21% 79% / 56% 44% 67% 33%; }
+   background-color: #007acc;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   margin: 5px;
+   border-radius: 5px;
+   cursor: grab;
 }
 
 button:hover {
-    background-color: #005999;
+   background-color: #005999;
+}
+
+h1, h2 {
+   font-weight: bold;
 }
 
 section {
-    margin-bottom: 40px;
+   margin-bottom: 40px;
 }
 
 @keyframes ocean {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+   0% { background-position: 0% 50%; }
+   50% { background-position: 100% 50%; }
+   100% { background-position: 0% 50%; }
 }
